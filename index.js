@@ -107,7 +107,7 @@ let roleName =quest;
     
     
     let pembed = new Discord.MessageEmbed()
-  .setAuthor("Quest "+quest, msg.author.displayAvatarURL())
+  .setAuthor("Quest "+quest, "")
   .setTitle("Pokestop : " +pokestop)
   .setDescription(member.user) // This will be shown under our title, or before fields if we have no title
   .setFooter("Pubicado ", "")
