@@ -107,7 +107,7 @@ let roleName =quest;
    
  
     
-   msg.guild.channels.find("name", "quest-notificacao").sendMessage(new Date(Date.now()).toLocaleString()+" "+member.user+" Quest **"+quest+"** - Pokestop : **" +pokestop +"** Válido até : **"+dd+"-"+mm+"-"+yyyy+" às 23:59**");
+   msg.guild.channels.find("name", "quest-notificacao").sendMessage(new Date(Date.now()).toLocaleString()+" "+member.user+" Quest **"+quest+"** - Pokestop : **" +pokestop +"\n**Válido até : **"+dd+"-"+mm+"-"+yyyy+" às 23:59**");
     
   
 
