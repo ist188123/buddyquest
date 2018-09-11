@@ -97,20 +97,19 @@ let roleName =quest;
   //  msg.guild.channels.find("name", "quest-info").sendMessage(member.user+"\n")
     // msg.guild.channels.find("name", "quest-info").sendMessage(client.users.find(member.user.username, "mensagem").toString())
     
-   
+   var today = new Date();
+var dd = today.getDate(); 
+var mm = today.getMonth(); 
+var yyyy = today.getFullYear(); 
+
     
     // member.user.send("lkjlkjk");
    
  
     
-   // msg.guild.channels.find("name", "quest-notificacao").sendMessage(new Date(Date.now()).toLocaleString()+" "+member.user+" Quest "+quest+" - Pokestop : " +pokestop);
+   msg.guild.channels.find("name", "quest-notificacao").sendMessage(new Date(Date.now()).toLocaleString()+" "+member.user+" Quest **"+quest+"** - Pokestop : **" +pokestop +"** Válido até : **"+dd+"-"+mm+"-"+yyyy+" às 23:59**");
     
-   msg.guild.channels.find("name", "quest-notificacao").sendMessage({embed: {
-  color: 3447003,
-  description: member.user+" Quest "+quest+" - Pokestop : " +pokestop
-   
-
-   }});
+  
 
     
   
