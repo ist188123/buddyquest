@@ -103,12 +103,14 @@ let roleName =quest;
    
  
     
-    msg.guild.channels.find("name", "quest-notificacao").sendMessage(new Date(Date.now()).toLocaleString()+" "+member.user+" Quest "+quest+" - Pokestop : " +pokestop);
+   // msg.guild.channels.find("name", "quest-notificacao").sendMessage(new Date(Date.now()).toLocaleString()+" "+member.user+" Quest "+quest+" - Pokestop : " +pokestop);
     
    msg.guild.channels.find("name", "quest-notificacao").sendMessage({embed: {
   color: 3447003,
-  description: "A very simple Embed!"
-}});
+  description: member.user+" Quest "+quest+" - Pokestop : " +pokestop
+   
+
+   }});
 
     
   
