@@ -81,7 +81,10 @@ let questimagem="";
     
     
     
-    
+    var today = new Date();
+var dd = today.getDate(); 
+var mm = today.getMonth(); 
+var yyyy = today.getFullYear(); 
   
     let autor=msg.author;
    
@@ -97,10 +100,7 @@ let roleName =quest;
   //  msg.guild.channels.find("name", "quest-info").sendMessage(member.user+"\n")
     // msg.guild.channels.find("name", "quest-info").sendMessage(client.users.find(member.user.username, "mensagem").toString())
     
-   var today = new Date();
-var dd = today.getDate(); 
-var mm = today.getMonth(); 
-var yyyy = today.getFullYear(); 
+   
 
     
     // member.user.send("lkjlkjk");
