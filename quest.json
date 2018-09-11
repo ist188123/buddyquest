@@ -1,0 +1,35 @@
+[
+    
+    {
+        "cod": "chansey",
+        "quest": "CHANSEY",
+        "missao": "CHOCAR 5 OVOS",
+        "questimagem": "https://exraidspinhalnovo.webnode.pt/_files/200000043-cd4a1ce43f/450/chansey.png"
+   },
+
+   {
+        "cod": "machop",
+        "quest": "MACHOP",
+        "missao": "Ganhar 5 batalhas em ginásios",
+        "questimagem": "https://exraidspinhalnovo.webnode.pt/_files/200000045-311d632243/450/machop.png"
+   },
+   {
+        "cod": "spinda",
+        "quest": "SPINDA",
+        "missao": "Fazer uma Great Curveball Throw",
+        "questimagem": "https://exraidspinhalnovo.webnode.pt/_files/200000046-be5f5bf55a/450/spinda.png"
+   },
+   {
+        "cod": "dratini",
+        "quest": "DRATINI",
+        "missao": "Ganhar uma Raid de nivel 3 ou superior.",
+        "questimagem": "https://exraidspinhalnovo.webnode.pt/_files/200000047-b8d7fb9cce/450/dratini.png"
+   },
+    {
+        "cod": "silver",
+        "quest": "SILVER",
+        "missao": "Apanhar 5 Pokemons de fogo.",
+        "questimagem": "https://exraidspinhalnovo.webnode.pt/_files/200000048-ebbc1ecc00/450/silver.png"
+   }
+
+]
