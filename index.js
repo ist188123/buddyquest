@@ -103,17 +103,9 @@ let roleName =quest;
    
  
     
-   // msg.guild.channels.find("name", "quest-notificacao").sendMessage(member.user+" "+new Date(Date.now()).toLocaleString()+"\nQuest "+quest+" - Pokestop : " +pokestop);
+    msg.guild.channels.find("name", "quest-notificacao").sendMessage(new Date(Date.now()).toLocaleString()+" "+member.user+" Quest "+quest+" - Pokestop : " +pokestop);
     
     
-    let pembed = new Discord.MessageEmbed()
-  .setAuthor("Quest "+quest, "")
-  .setTitle("Pokestop : " +pokestop)
-  .setDescription(member.user) // This will be shown under our title, or before fields if we have no title
-  .setFooter("Pubicado ", "")
-   .setTimestamp();
-
-     msg.guild.channels.find("name", "quest-notificacao").sendMessage({ pembed })
     
   
   })
