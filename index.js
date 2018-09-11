@@ -54,7 +54,10 @@ client.on("message", async (msg) => {
  
   if(msg.content.startsWith('!')){
     
-   
+   var today = new Date();
+var dd = today.getDate(); 
+var mm = today.getMonth(); 
+var yyyy = today.getFullYear(); 
 
 var dmsg=msg.content.substring(1);
 
@@ -104,7 +107,7 @@ let roleName =quest;
    
  
     
-   msg.guild.channels.find("name", "quest-notificacao").sendMessage(new Date(Date.now()).toLocaleString()+" "+member.user+" Quest **"+quest+"** - Pokestop : **" +pokestop+"**" );
+   msg.guild.channels.find("name", "quest-notificacao").sendMessage(member.user+" Quest **"+quest+"** - Pokestop : **" +pokestop+"**\nVálido até : "+dd+"-"+mm+"-"+yyyy+" às 23:59" );
     
   
 
