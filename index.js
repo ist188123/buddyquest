@@ -81,10 +81,7 @@ let questimagem="";
     
     
     
-    var today = new Date();
-var dd = today.getDate(); 
-var mm = today.getMonth(); 
-var yyyy = today.getFullYear(); 
+    
   
     let autor=msg.author;
    
@@ -107,7 +104,7 @@ let roleName =quest;
    
  
     
-   msg.guild.channels.find("name", "quest-notificacao").sendMessage(new Date(Date.now()).toLocaleString()+" "+member.user+" Quest **"+quest+"** - Pokestop : **" +pokestop +"\n**Válido até : **"+dd+"-"+mm+"-"+yyyy+" às 23:59**");
+   msg.guild.channels.find("name", "quest-notificacao").sendMessage(new Date(Date.now()).toLocaleString()+" "+member.user+" Quest **"+quest+"** - Pokestop : **" +pokestop );
     
   
 
