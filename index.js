@@ -106,13 +106,13 @@ let roleName =quest;
    // msg.guild.channels.find("name", "quest-notificacao").sendMessage(member.user+" "+new Date(Date.now()).toLocaleString()+"\nQuest "+quest+" - Pokestop : " +pokestop);
     
     
-    let embed = new Discord.MessageEmbed()
+    let pembed = new Discord.MessageEmbed()
   .setAuthor("Quest "+quest, msg.author.displayAvatarURL())
   .setTitle("Pokestop : " +pokestop)
   .setDescription(member.user) // This will be shown under our title, or before fields if we have no title
   .addField(new Date(Date.now()).toLocaleString(), false); // This will add field to our embed, first value is for field's title, second is for value, and third one, boolean, is to say if field should be in-line or not, we'll get to that later
 
-     msg.guild.channels.find("name", "quest-notificacao").sendMessage(embed)
+     msg.guild.channels.find("name", "quest-notificacao").sendMessage(pembed)
     
   
   })
