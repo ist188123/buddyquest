@@ -103,7 +103,7 @@ let roleName =quest;
    
  
     
-    msg.guild.channels.find("name", "quest-notificacao").sendMessage(member.user+" Quest "+quest+" - Pokestop : " +pokestop+" enviado : "+new Date(Date.now()).toLocaleString());
+    msg.guild.channels.find("name", "quest-notificacao").sendMessage(member.user+"\nNotificado a : "+new Date(Date.now()).toLocaleString()+"\nQuest "+quest+" - Pokestop : " +pokestop);
     
     
     
