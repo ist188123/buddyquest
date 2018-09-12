@@ -10,12 +10,6 @@ var tamanhoFicheiro = Object.keys(raids).length;
 //console.log(tamanhoFicheiro)
 
 
-let today = new Date();
-let dia = today.getDate(); 
-let mes = today.getMonth(); 
-let ano = today.getFullYear(); 
-
-
 
 
 
@@ -105,7 +99,7 @@ let roleName =quest;
    
  
     
-    msg.guild.channels.find("name", "quest-notificacao").sendMessage(member.user+" Quest **"+quest+"** - Pokestop : **" +pokestop+"**\nVálido até : "+dia+"-"+mes+"-"+ano+" às 23:59");
+    msg.guild.channels.find("name", "quest-notificacao").sendMessage(new Date().toLocaleString()+" "+member.user+" Quest **"+quest+"** - Pokestop : **" +pokestop);
     
     
     
