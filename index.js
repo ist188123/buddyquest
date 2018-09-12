@@ -15,6 +15,11 @@ var tamanhoFicheiro = Object.keys(raids).length;
 
 client.on("message", async (msg) => {
   
+  
+  try {
+  
+  
+  
  //ADICIONAR REGRAS AOS TREINADORES 
  // quest-notificacao
   if (msg.channel.name == 'buddy-quest-lab') {
@@ -136,9 +141,10 @@ let roleName =quest;
   
   }
   //----
+  }//erro
+catch (e) {
   
-  
-  
+}
   });
 
 client.login(process.env.BOT_TOKEN);
