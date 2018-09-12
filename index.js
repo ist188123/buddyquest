@@ -10,10 +10,6 @@ var tamanhoFicheiro = Object.keys(raids).length;
 //console.log(tamanhoFicheiro)
 
 
-let today = new Date();
-let dia = today.getDate(); 
-let mes = today.getMonth(); 
-let ano = today.getFullYear(); 
 
 
 
@@ -25,6 +21,13 @@ client.on("message", async (msg) => {
  //ADICIONAR REGRAS AOS TREINADORES 
  // quest-notificacao
   if (msg.channel.name == 'buddy-quest-lab') {
+  let today = new Date();
+let dia = today.getDate(); 
+let mes = today.getMonth(); 
+let ano = today.getFullYear(); 
+  
+    
+    
     
   var regra="";
   var role = "";
