@@ -16,15 +16,12 @@ var tamanhoFicheiro = Object.keys(raids).length;
 
 
 
+
 client.on("message", async (msg) => {
   
  //ADICIONAR REGRAS AOS TREINADORES 
  // quest-notificacao
   if (msg.channel.name == 'buddy-quest-lab') {
-
-  
-    
-    
     
   var regra="";
   var role = "";
@@ -57,7 +54,7 @@ client.on("message", async (msg) => {
  
   if(msg.content.startsWith('!')){
     
-  
+   
 
 var dmsg=msg.content.substring(1);
 
@@ -101,16 +98,16 @@ let roleName =quest;
     // msg.guild.channels.find("name", "quest-info").sendMessage(client.users.find(member.user.username, "mensagem").toString())
     
    
-
     
     // member.user.send("lkjlkjk");
    
  
     
-   msg.guild.channels.find("name", "quest-notificacao").sendMessage(member.user+" Quest **"+quest+"** - Pokestop : "+pokestop);
+    msg.guild.channels.find("name", "quest-notificacao").sendMessage(member.user+" Quest "+quest+" - Pokestop : " +pokestop);
     
-  
-
+    
+    
+    
     
   
   })
